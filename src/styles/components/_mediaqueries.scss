@@ -41,9 +41,7 @@
 
 
     .container__banner {
-        background-image: none;
-        background: rgb(0,88,182);
-        background: linear-gradient(128deg, $blue-gr-t 0%, $blue-gr-b 100%);
+
         height: 665px!important;
         padding-top: 10px;
 
@@ -110,9 +108,16 @@
     }
 }
 
-@media (min-width: 992px) {
-    .custom-element {
-      color: var(--primary);
+@media (max-width: 999px) {
+    .container__cards {
+        min-height: 500px;
+    }
+    
+    .container__banner {
+        background-image: none;
+        background: rgb(0,88,182);
+        background: linear-gradient(128deg, $blue-gr-t 0%, $blue-gr-b 100%);        
+        min-height: 740px;
     }
 }
 
@@ -124,46 +129,43 @@
 
 
 .container__slide {
+    padding-top: 0;
+
     .row:first-child {
         text-align: center;
-        padding-bottom: 50px;
 
-        .carousel {
-            width: 300px;
-        }
+        .react-multi-carousel-list {
 
-        .carousel-indicators {
-            bottom: -60px;
+            .react-multi-carousel-item {
+            }
 
-            li {
-            
-                background-color: #ff760000;
-                border-radius: 50px;
-                border: 2px solid #576078;
-                height: 15px;
-                margin-left: 7px;
-                margin-right: 7px;
-                opacity: 1;
-                width: 15px;
-                
-                &.active {
-                    height: 18px;
-                    width: 18px;
-                    border: none;
-                    background-color: #FF7600;
+            height: 460px;
+
+            .react-multi-carousel-dot-list {
+                bottom: 0;
+
+                .react-multi-carousel-dot {
+                    button {
+                        width: 18px;
+                        height: 18px;
+                        border: 2px solid #576078;
+                        margin-right: 14px;
+                    }
                 }
-            }
-        }
 
-        .carousel-inner {
-            .carousel-caption {
-                font-size: 28px;
-                font-weight: 700;
-                bottom:-8px;
-                left: 8%;
-                text-align: left;
+                .react-multi-carousel-dot--active {
+                    button {
+                        background: #FF7600;
+                        border: 2px solid #FF7600;
+                    }
+                }
+                
+                
             }
+
         }
+        
     }
 
 }
+

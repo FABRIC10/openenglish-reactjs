@@ -8,32 +8,36 @@ export const Slide = () => {
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <Carousel activeIndex={0} controls={false} touch={false} slide={false} pause={true} slide={true} interval={500000}>
+                    <Carousel>
 
                         <Carousel.Item>
-                            <img className="d-block w-100" src="assets/images/pics/pic01.png" alt="First slide" />
+                            <img className="" src="assets/images/pics/pic01.png" alt="First slide" />
                             <Carousel.Caption>
                                 <h3>Title 1</h3>
                                 </Carousel.Caption>
                         </Carousel.Item>
+
                         <Carousel.Item>
-                            <img className="d-block w-100" src="assets/images/pics/pic02.png" alt="First slide" />
+                            <img className="" src="assets/images/pics/pic02.png" alt="First slide" />
                             <Carousel.Caption>
                                 <h3>Title 2</h3>
                                 </Carousel.Caption>
                         </Carousel.Item>
+                        
                         <Carousel.Item>
-                            <img className="d-block w-100" src="assets/images/pics/pic03.png" alt="First slide" />
+                            <img className="" src="assets/images/pics/pic03.png" alt="First slide" />
                             <Carousel.Caption>
                                 <h3>Title 3</h3>
                                 </Carousel.Caption>
                         </Carousel.Item>
+                        
                         <Carousel.Item>
-                            <img className="d-block w-100" src="assets/images/pics/pic04.png" alt="First slide" />
+                            <img className="" src="assets/images/pics/pic04.png" alt="First slide" />
                             <Carousel.Caption>
                                 <h3>Title 4</h3>
                                 </Carousel.Caption>
                         </Carousel.Item>
+                        
                     </Carousel>
                 </div>
             </div>  
